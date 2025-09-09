@@ -9,7 +9,7 @@ pipeline {
     environment {
         APP_NAME            = "nxtgen_app-pipeline"
         RELEASE             = "1.0.0"
-        DOCKER_USER         = "yomesky2000@yahoo.com"
+        DOCKER_USER         = "yomlinux@gmail.com"
         DOCKER_PASS         = "Olayinka@13"
         IMAGE_NAME          = "${DOCKER_USER}/${APP_NAME}"
         IMAGE_TAG           = "${RELEASE}-${BUILD_NUMBER}"
@@ -25,7 +25,7 @@ pipeline {
 
         stage("SCM Checkout") { 
             steps {
-                git branch: 'main', credentialsId: 'GitHub-Token', url: 'https://github.com/yomesky2000/registration-app'
+                git branch: 'main', credentialsId: 'GitHub-Token', url: 'https://github.com/yomlinux@gmail.com/registration-app'
                 echo "NextGen Application Repositories Clone Successful"
             }
         }
@@ -140,3 +140,4 @@ pipeline {
        }
     }
 }
+
